@@ -39,7 +39,7 @@ const ContractView = ({ contractName }: Props) => {
     }
   }, [selector, contractName]);
 
-  const changeGreeting = (e: any) => {
+  const Staking = (e: any) => {
     e.preventDefault();
 
     if (!accountId) {
@@ -77,9 +77,9 @@ const ContractView = ({ contractName }: Props) => {
             <h1 className="font-medium">
               The contract says: <span className="font-normal">{valueFromBlockchain}</span>
             </h1>
-            <form onSubmit={changeGreeting} className="change">
+            <form onSubmit={Staking} className="change">
               <label htmlFor="contrast-example" className="block text-sm font-medium text-slate-700 mb-4">
-                Change greeting:
+                staking:
               </label>
 
               <div className="flex flex-row gap-6">
